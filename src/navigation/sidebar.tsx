@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { NavLink } from "react-router-dom";
 
-import { AlignLeft, Box, Share2 } from "@styled-icons/feather";
+import { AlignLeft, Box, Share2, User, Command } from "@styled-icons/feather";
 import styled from "styled-components";
 
 export interface SidebarProps {
@@ -53,7 +53,7 @@ const Sidebar: FC<SidebarProps> = () => {
         <StyledAppBar>
             <TopItemsContainer>
                 <StyledAppBarItem to="/attributes">
-                    <AlignLeft size={21} />
+                    <Command size={30} />
                 </StyledAppBarItem>
             </TopItemsContainer>
             <CenterItemsContainer>
@@ -69,7 +69,7 @@ const Sidebar: FC<SidebarProps> = () => {
             </CenterItemsContainer>
             <BottomItemsContainer>
                 <StyledAppBarItem to="/rulesEngine">
-                    <Share2 size={21} />
+                    <User size={30} />
                 </StyledAppBarItem>
             </BottomItemsContainer>
         </StyledAppBar>
