@@ -81,6 +81,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         width: 100%;
         height: 100vh;
+        margin-top: 0px;
     }
 
     #root {
@@ -89,5 +90,8 @@ export const GlobalStyles = createGlobalStyle`
         height: 100%;
         margin: 0px;
         padding: 0px; 
+        margin-top: 0px;
     }
+
+    
 `;

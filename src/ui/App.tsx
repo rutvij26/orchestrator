@@ -8,10 +8,13 @@ import RulesEngine from "./components/rulesEngine";
 import "./App.css";
 
 export interface AppProps {}
+const theme = {
+    main: "black",
+};
 
 const App: FC<AppProps> = (props) => {
     return (
-        <ThemeProvider theme={{}}>
+        <ThemeProvider theme={theme}>
             <Sidebar />
             <Switch>
                 <Route path="/attributes" component={Attributes} />
