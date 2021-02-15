@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { NavLink } from "react-router-dom";
+// import Album from "@styled-icons/boxicons-regular/Album/Album";
 
 export interface SidebarProps {
     size?: number;
@@ -8,6 +9,7 @@ export interface SidebarProps {
 const Sidebar: FC<SidebarProps> = () => {
     return (
         <div className="sidenav">
+            {/* <Album /> */}
             <NavLink className="side-btn" to="/attributes">
                 A
             </NavLink>

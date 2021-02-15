@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FC } from "react";
 
-const Attributes: React.FC = () => {
-  return <div>Attribute Rendered!</div>;
+const Attributes: FC = () => {
+    return <div>Attribute Rendered!</div>;
 };
 
 export default Attributes;

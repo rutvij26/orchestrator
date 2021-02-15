@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FC } from "react";
 
-const RulesEngine: React.FC = () => {
-  return <div>RuleEngine Rendered!</div>;
+const RulesEngine: FC = () => {
+    return <div>RuleEngine Rendered!</div>;
 };
 
 export default RulesEngine;
