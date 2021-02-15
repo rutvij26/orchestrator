@@ -6,6 +6,7 @@ import Attributes from "./components/attributes";
 import ThreeD from "./components/3d";
 import RulesEngine from "./components/rulesEngine";
 import { theme } from "./theme";
+import { BrowserRouter } from "react-router-dom";
 
 export interface AppProps {}
 
@@ -23,17 +24,22 @@ export const AppWrapper = styled.div`
 const App: FC<AppProps> = (props) => {
     return (
         <ThemeProvider theme={theme}>
-            <AppContainer>
-                <Sidebar />
-                <AppWrapper>
-                    <Switch>
-                        <Route path="/attributes" component={Attributes} />
-                        <Route path="/3d" component={ThreeD} />
-                        <Route path="/rulesEngine" component={RulesEngine} />
-                        <Redirect from="/" to="/attributes" />
-                    </Switch>
-                </AppWrapper>
-            </AppContainer>
+            <BrowserRouter>
+                <AppContainer>
+                    <Sidebar />
+                    <AppWrapper>
+                        <Switch>
+                            <Route path="/attributes" component={Attributes} />
+                            <Route path="/3d" component={ThreeD} />
+                            <Route
+                                path="/rulesEngine"
+                                component={RulesEngine}
+                            />
+                            <Redirect from="/" to="/attributes" />
+                        </Switch>
+                    </AppWrapper>
+                </AppContainer>
+            </BrowserRouter>
         </ThemeProvider>
     );
 };
