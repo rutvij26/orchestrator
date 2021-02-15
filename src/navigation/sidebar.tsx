@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { NavLink } from "react-router-dom";
-
+import { BrowserRouter } from "react-router-dom";
 import { AlignLeft, Box, Share2, User, Command } from "@styled-icons/feather";
 import styled from "styled-components";
 
@@ -50,29 +50,31 @@ const BottomItemsContainer = styled.div`
 
 const Sidebar: FC<SidebarProps> = () => {
     return (
-        <StyledAppBar>
-            <TopItemsContainer>
-                <StyledAppBarItem to="/attributes">
-                    <Command size={30} />
-                </StyledAppBarItem>
-            </TopItemsContainer>
-            <CenterItemsContainer>
-                <StyledAppBarItem to="/attributes">
-                    <AlignLeft size={21} />
-                </StyledAppBarItem>
-                <StyledAppBarItem to="/3d">
-                    <Box size={21} />
-                </StyledAppBarItem>
-                <StyledAppBarItem to="/rulesEngine">
-                    <Share2 size={21} />
-                </StyledAppBarItem>
-            </CenterItemsContainer>
-            <BottomItemsContainer>
-                <StyledAppBarItem to="/rulesEngine">
-                    <User size={30} />
-                </StyledAppBarItem>
-            </BottomItemsContainer>
-        </StyledAppBar>
+        <BrowserRouter>
+            <StyledAppBar>
+                <TopItemsContainer>
+                    <StyledAppBarItem to="/attributes">
+                        <Command size={30} />
+                    </StyledAppBarItem>
+                </TopItemsContainer>
+                <CenterItemsContainer>
+                    <StyledAppBarItem to="/attributes">
+                        <AlignLeft size={21} />
+                    </StyledAppBarItem>
+                    <StyledAppBarItem to="/3d">
+                        <Box size={21} />
+                    </StyledAppBarItem>
+                    <StyledAppBarItem to="/rulesEngine">
+                        <Share2 size={21} />
+                    </StyledAppBarItem>
+                </CenterItemsContainer>
+                <BottomItemsContainer>
+                    <StyledAppBarItem to="/rulesEngine">
+                        <User size={30} />
+                    </StyledAppBarItem>
+                </BottomItemsContainer>
+            </StyledAppBar>
+        </BrowserRouter>
     );
 };
 
