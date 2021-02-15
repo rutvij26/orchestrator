@@ -5,7 +5,6 @@ import Sidebar from "./../navigation/sidebar";
 import Attributes from "./components/attributes";
 import ThreeD from "./components/3d";
 import RulesEngine from "./components/rulesEngine";
-import "./App.css";
 import { theme } from "./theme";
 
 export interface AppProps {}

@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import styled from "styled-components";
 
 export const StyledTitle = styled.div`
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.primary};
     font-size: 30px;
     margin: 20px;
 `;
